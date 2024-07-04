@@ -18,7 +18,7 @@ const CountyFlags = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setCountriesData(data))
-        .catch((error) => console.log("Error fetching data: " + error.message));
+        .catch((error) => console.error("Error fetching data: " + error.message));
         
     }, []);
 
